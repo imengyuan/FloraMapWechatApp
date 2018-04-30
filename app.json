@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/article/article"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/article/article",
+        "text":"拍照上传"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "活动规则"
+      }
+      
+
+
+    ],
+    "selectedColor":"#589ad5"
+  }
+}
