@@ -1,4 +1,4 @@
 <!--pages/article/article.wxml-->
-<web-view src="http://202.115.55.252/magic/list.aspx" ></web-view>
+<text>植物科普文章图块页面</text>
 
 

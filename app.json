@@ -1,9 +1,10 @@
 {
   "pages":[
+    "pages/map/map",
+    "pages/activity/activity",
+    "pages/article/article",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/article/article"
-    
+    "pages/logs/logs"  
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -14,17 +15,31 @@
   "tabBar":{
     "list":[
       {
-        "pagePath":"pages/article/article",
-        "text":"拍照上传"
+        "pagePath":"pages/map/map",
+        "iconPath": "image/map.png",
+        "selectedIconPath": "image/map_active.png",
+        "text":"地图"
       },
       {
+        "pagePath": "pages/activity/activity",
+        "iconPath": "image/activity.png",
+        "selectedIconPath": "image/activity_active.png",       
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "iconPath": "image/article.png",
+        "selectedIconPath": "image/article_active.png",        
+        "text": "发现"
+      }, 
+      {
         "pagePath": "pages/index/index",
-        "text": "活动规则"
-      }
-      
-
-
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/mine_active.png",        
+        "text": "我的"
+      }    
     ],
     "selectedColor":"#589ad5"
-  }
+  },
+  "debug": true
 }
