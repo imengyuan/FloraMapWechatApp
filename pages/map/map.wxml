@@ -1,2 +1,2 @@
 <!--pages/map/map.wxml-->
-<map id="map" longitude="103.736131" latitude="29.56571" scale="10" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 580px;"></map>
+<map id="map" longitude="104.0815651" latitude="30.6337927" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 580px;"></map>

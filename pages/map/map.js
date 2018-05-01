@@ -1,25 +1,14 @@
 // map.js
-let schoolData = require('../../resources/plant_location')
+let plantData = require('../../resources/plant_location')
 Page({
   data: {
     centerX: 103.736131,
     centerY: 29.56571,
     markers: [],
-    // polyline: [{
-    //   points: [{
-    //     longitude: 113.3245211,
-    //     latitude: 23.10229
-    //   }, {
-    //     longitude: 113.324520,
-    //     latitude: 23.21229
-    //   }],
-    //   color:"#FF0000DD",
-    //   width: 2,
-    //   dottedLine: true
-    // }],
+
     controls: [{
       id: 1,
-      iconPath: '/image/location_control.png',
+      iconPath: '/image/new_location_control.png',
       position: {
         left: 0,
         top: 10,
@@ -46,7 +35,7 @@ Page({
         this.setData({
           centerX: longitude,
           centerY: latitude,
-          markers: this.getSchoolMarkers()
+          markers: this.getPlantMarkers()
         })
       }
     });
@@ -61,9 +50,9 @@ Page({
     console.log(e.controlId)
     this.moveToLocation()
   },
-  getSchoolMarkers() {
+  getPlantMarkers() {
     let markers = [];
-    for (let item of schoolData) {
+    for (let item of plantData) {
       let marker = this.createMarker(item);
       markers.push(marker)
     }
@@ -76,7 +65,7 @@ Page({
     let latitude = point.latitude;
     let longitude = point.longitude;
     let marker = {
-      iconPath: "/image/marker.png",
+      iconPath: "/image/树木1.png",
       id: point.id || 0,
       name: point.name || '',
       latitude: latitude,

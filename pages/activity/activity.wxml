@@ -1,2 +1,4 @@
 <!--pages/activity/activity.wxml-->
-<text>活动信息页面</text>
+<view class="start">
+  <image src="/image/activity_demo.jpg"  mode="widthFix"></image>
+</view>
